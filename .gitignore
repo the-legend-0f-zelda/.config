@@ -1,0 +1,22 @@
+# 기본 전부 무시
+*
+
+# 이 파일 자체
+!.gitignore
+
+# hyprland
+!hypr/
+!hypr/hyprland.conf
+
+# fcitx5
+!fcitx5/
+!fcitx5/config
+
+# komorebi (Windows)
+!komorebi/
+!komorebi/*
+
+# 기타
+!whkdrc
+!nwg-dock-pinned
+!screenshot-area.sh
