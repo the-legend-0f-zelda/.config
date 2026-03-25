@@ -7,6 +7,7 @@
 # hyprland
 !hypr/
 !hypr/hyprland.conf
+!hypr/clamshell.sh
 
 # fcitx5
 !fcitx5/
