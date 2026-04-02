@@ -11,8 +11,8 @@ EnumerateSkipFirst=False
 ModifierOnlyKeyTimeout=250
 
 [Hotkey/TriggerKeys]
-0=Control+space
-1=Hangul
+0=Hangul
+1=Alt+space
 
 [Hotkey/ActivateKeys]
 0=Hangul_Hanja
