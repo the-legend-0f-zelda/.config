@@ -58,6 +58,8 @@ alt + p                 : komorebic toggle-pause
 # Layouts
 alt + x                 : komorebic flip-layout horizontal
 alt + y                 : komorebic flip-layout vertical
+win + j                 : komorebic cycle-layout next
+win + shift + j         : komorebic cycle-layout previous
 
 # Workspaces
 win + 1                 : komorebic focus-workspace 0
