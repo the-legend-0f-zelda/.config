@@ -29,6 +29,10 @@
 !wezterm/
 !wezterm/*
 
+# nushell
+!nushell/
+!nushell/*
+
 # 기타
 !README.md
 !whkdrc

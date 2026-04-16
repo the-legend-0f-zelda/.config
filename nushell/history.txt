@@ -1,0 +1,14 @@
+echo $env:XDG_CONFIG_HOME
+echo $env.XDG_CONFIG_HOME
+ls
+cd ../../
+cd projects\inni_PQMS_WEB\clear
+clear
+ls
+pwd
+clear
+cd projects\inni_PQMS_WEB
+clear
+pwd
+ls
+clear
