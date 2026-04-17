@@ -32,6 +32,7 @@
 # nushell
 !nushell/
 !nushell/*
+nushell/history.txt
 
 # 기타
 !README.md

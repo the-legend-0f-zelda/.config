@@ -16,3 +16,5 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
+$env.PATH = (bash -lic 'echo $PATH' | split row ':')
