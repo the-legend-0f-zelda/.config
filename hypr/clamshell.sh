@@ -8,7 +8,7 @@ case "$1" in
 
     open)
         # eDP-1 복구 — 위치를 명시적으로 지정해야 커서 이동이 정상 작동
-        hyprctl keyword monitor "eDP-1, preferred, 1920x0, 1.5"
+        hyprctl keyword monitor "eDP-1, preferred, 1920x0, 1"
 
         # nwg-dock-hyprland 재시작 (모니터 변경 시 사라지는 문제 해결)
         sleep 2
