@@ -34,6 +34,10 @@
 !nushell/*
 nushell/history.txt
 
+# bincur
+!bincur/
+!bincur/*
+
 # 기타
 !README.md
 !whkdrc
