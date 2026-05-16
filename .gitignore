@@ -4,10 +4,13 @@
 # 이 파일 자체
 !.gitignore
 
+# xkb
+!xkb/
+!xkb/**
+
 # hyprland
 !hypr/
-!hypr/hyprland.conf
-!hypr/clamshell.sh
+!hypr/*
 
 # nwg-dock-hyprland
 !nwg-dock-hyprland/

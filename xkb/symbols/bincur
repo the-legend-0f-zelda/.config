@@ -1,0 +1,11 @@
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+    include "us(basic)"
+
+    // rollback: revert to <I248> + bincur rewire leftmeta->unknown if Mod4 leaks
+    key <LWIN> {
+        type = "ONE_LEVEL",
+        [ Hyper_L ]
+    };
+    modifier_map Mod3 { <LWIN> };
+};
