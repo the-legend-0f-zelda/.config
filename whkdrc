@@ -12,14 +12,14 @@ alt + i                 : komorebic toggle-shortcuts
 # alt + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
 # alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
 
-win + q                 : komorebic close
+f22 + q                 : komorebic close
 alt + m                 : komorebic minimize
 
 # Focus windows
-win + left                 : komorebic focus left
-win + down                 : komorebic focus down
-win + up                   : komorebic focus up
-win + right                : komorebic focus right
+f22 + left                 : komorebic focus left
+f22 + down                 : komorebic focus down
+f22 + up                   : komorebic focus up
+f22 + right                : komorebic focus right
 
 alt + shift + oem_4     : komorebic cycle-focus previous # oem_4 is [
 alt + shift + oem_6     : komorebic cycle-focus next # oem_6 is ]
@@ -58,18 +58,18 @@ alt + p                 : komorebic toggle-pause
 # Layouts
 alt + x                 : komorebic flip-layout horizontal
 alt + y                 : komorebic flip-layout vertical
-win + j                 : komorebic cycle-layout next
-win + shift + j         : komorebic cycle-layout previous
+f22 + a                 : komorebic cycle-layout next
+f22 + shift + a         : komorebic cycle-layout previous
 
 # Workspaces
-win + 1                 : komorebic focus-workspace 0
-win + 2                 : komorebic focus-workspace 1
-win + 3                 : komorebic focus-workspace 2
-win + 4                 : komorebic focus-workspace 3
-win + 5                 : komorebic focus-workspace 4
-win + 6                 : komorebic focus-workspace 5
-win + 7                 : komorebic focus-workspace 6
-win + 8                 : komorebic focus-workspace 7
+f22 + 1                 : komorebic focus-workspace 0
+f22 + 2                 : komorebic focus-workspace 1
+f22 + 3                 : komorebic focus-workspace 2
+f22 + 4                 : komorebic focus-workspace 3
+f22 + 5                 : komorebic focus-workspace 4
+f22 + 6                 : komorebic focus-workspace 5
+f22 + 7                 : komorebic focus-workspace 6
+f22 + 8                 : komorebic focus-workspace 7
 
 # Move windows across workspaces
 alt + 1         : komorebic move-to-workspace 0

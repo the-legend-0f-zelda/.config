@@ -40,6 +40,8 @@ nushell/history.txt
 # bincur
 !bincur/
 !bincur/*
+!bincur-Windows/
+!bincur-Windows/*
 
 # 기타
 !README.md
