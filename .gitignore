@@ -16,6 +16,10 @@
 !nwg-dock-hyprland/
 !nwg-dock-hyprland/*
 
+# chillpill-shell
+!chillpill-shell/
+!chillpill-shell/*
+
 # fcitx5
 !fcitx5/
 !fcitx5/config
