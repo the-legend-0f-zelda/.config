@@ -10,7 +10,7 @@ hl.monitor({ output = "",      mode = "preferred", position = "auto", scale = "a
 ---- MY PROGRAMS ----
 ---------------------
 
-local terminal    = "kitty"
+local terminal    = "ghostty"
 local fileManager = "dolphin"
 local menu        = "wofi --show drun"
 
