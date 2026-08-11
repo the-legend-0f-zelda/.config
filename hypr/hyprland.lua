@@ -25,10 +25,10 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("~/.config/hypr/clamshell.sh dock")
     hl.exec_cmd("~/.config/hypr/clamshell.sh watch")
     hl.exec_cmd("waypaper --restore")
-    hl.exec_cmd("chillpill-shell")
+    --hl.exec_cmd("chillpill-shell")
     hl.exec_cmd("systemctl --user start bincur")
     hl.exec_cmd("~/.config/hypr/clamshell.sh init")
-    -- hl.exec_cmd("waybar")
+    hl.exec_cmd("waybar")
 end)
 
 
@@ -65,8 +65,8 @@ hl.permission("/usr/(bin|local/bin)/slurp", "screencopy", "allow")
 
 hl.config({
     general = {
-        gaps_in  = 5,
-        gaps_out = 10,
+        gaps_in  = 3,
+        gaps_out = 5,
 
         border_size = 2,
 
