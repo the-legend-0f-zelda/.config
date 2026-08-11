@@ -12,6 +12,10 @@
 !hypr/
 !hypr/*
 
+# waybar
+!waybar/
+!waybar/*
+
 # nwg-dock-hyprland
 !nwg-dock-hyprland/
 !nwg-dock-hyprland/*

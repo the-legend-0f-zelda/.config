@@ -1,0 +1,245 @@
+@define-color bar-bg      rgba(0, 0, 0, 0);
+@define-color module-bg   rgba(21, 23, 28, 0.63);
+@define-color module-hov  rgba(21, 23, 28, 0.88);
+@define-color tooltip-bg  rgba(21, 23, 28, 0.95);
+@define-color fg          #ffffff;
+@define-color fg-dim      #c3c9d4;
+@define-color accent      #7aa2f7;
+@define-color warn        #e0af68;
+@define-color crit        #f7768e;
+@define-color ok          #9ece6a;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", FontAwesome, Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+window#waybar {
+    background-color: @bar-bg;
+    color: @fg;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+tooltip {
+    background-color: @tooltip-bg;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @fg;
+    padding: 4px;
+}
+
+.modules-left {
+    margin-left: 8px;
+}
+
+.modules-right {
+    margin-right: 8px;
+}
+
+#workspaces,
+#mode,
+#scratchpad,
+#window,
+#custom-media,
+#mpd,
+#idle_inhibitor,
+#pulseaudio,
+#wireplumber,
+#network,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#keyboard-state,
+#language,
+#battery,
+#clock,
+#tray,
+#privacy,
+#custom-power {
+    background-color: @module-bg;
+    color: @fg;
+    padding: 1px 10px;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+}
+
+#workspaces {
+    padding: 2px 3px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    margin: 0 1px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: @fg-dim;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#workspaces button:hover {
+    background-color: @module-hov;
+    color: @fg;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: @accent;
+    color: #15171c;
+}
+
+#workspaces button.urgent {
+    background-color: @crit;
+    color: #15171c;
+}
+
+#mode:hover,
+#scratchpad:hover,
+#custom-media:hover,
+#mpd:hover,
+#idle_inhibitor:hover,
+#pulseaudio:hover,
+#wireplumber:hover,
+#network:hover,
+#power-profiles-daemon:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#battery:hover,
+#clock:hover,
+#custom-power:hover {
+    background-color: @module-hov;
+}
+
+#battery.warning:not(.charging),
+#temperature.critical,
+#network.disconnected,
+#mpd.disconnected {
+    color: @warn;
+}
+
+#battery.critical:not(.charging) {
+    color: @crit;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: @fg;
+    }
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @ok;
+}
+
+#pulseaudio.muted,
+#wireplumber.muted,
+#mpd.stopped,
+#mpd.paused {
+    color: @fg-dim;
+}
+
+#idle_inhibitor.activated {
+    color: @accent;
+}
+
+#power-profiles-daemon.performance {
+    color: @crit;
+}
+
+#power-profiles-daemon.balanced {
+    color: @accent;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @ok;
+}
+
+#scratchpad.empty,
+#custom-media.empty {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#window {
+    color: @fg-dim;
+    background-color: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+#custom-power {
+    color: @crit;
+    padding: 2px 12px;
+}
+
+#tray {
+    padding: 2px 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    color: @crit;
+}
+
+#keyboard-state {
+    padding: 2px 4px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+    color: @fg-dim;
+}
+
+#keyboard-state > label.locked {
+    color: @accent;
+}
+
+#privacy {
+    padding: 0 4px;
+}
+
+#privacy-item {
+    padding: 0 6px;
+    color: @fg;
+}
+
+#privacy-item.screenshare {
+    color: @warn;
+}
+
+#privacy-item.audio-in {
+    color: @ok;
+}
+
+#privacy-item.audio-out {
+    color: @accent;
+}
