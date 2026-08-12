@@ -32,7 +32,7 @@ restart_dock() {
         killall nwg-dock-hyprland 2>/dev/null
         sleep 0.5
         # fd 9를 닫아서 내보낸다. 상속하면 dock이 사는 동안 락이 안 풀린다.
-        setsid nwg-dock-hyprland -d -hd 0 -i 48 -p bottom -mb 5 -o "$out" \
+        setsid nwg-dock-hyprland -d -hd 0 -i 48 -p bottom -mb 5 -nolauncher -o "$out" \
             >/dev/null 2>&1 9>&- &
     ) 9>"${XDG_RUNTIME_DIR:-/tmp}/clamshell-dock.lock"
 }

@@ -42,9 +42,9 @@ hl.env("HYPRCURSOR_SIZE", "48")
 hl.env("HYPRCURSOR_THEME", "breeze-hypr")
 -- GTK_IM_MODULE 미설정: Wayland 네이티브 GTK 앱(Firefox 등)은 text-input-v3로 fcitx5에 붙음. fcitx 지정 시 dbus 경로와 충돌해 한글 입력 깨짐
 -- hl.env("GTK_IM_MODULE", "fcitx")
-hl.env("QT_IM_MODULE", "fcitx")
+--hl.env("QT_IM_MODULE", "fcitx")
 hl.env("XMODIFIERS", "@im=fcitx")
-hl.env("SDL_IM_MODULE", "fcitx")
+--hl.env("SDL_IM_MODULE", "fcitx")
 
 
 -----------------------

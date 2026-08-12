@@ -1,0 +1,13 @@
+command = /usr/bin/zsh
+shell-integration = zsh
+
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 16
+
+foreground = #EEEEEE
+background = #000000
+background-opacity = 0.55
+
+cursor-color = #8B008B
+
+shell-integration-features = ssh-env,ssh-terminfo

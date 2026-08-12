@@ -32,6 +32,10 @@
 !komorebi/
 !komorebi/*
 
+# ghostty
+!ghostty/
+!ghostty/*
+
 # kitty
 !kitty/
 !kitty/*
