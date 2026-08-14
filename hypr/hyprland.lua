@@ -36,6 +36,7 @@ end)
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
 
+hl.env("QT_QPA_PLATFORMTHEME", "kde")
 hl.env("XCURSOR_SIZE", "48")
 hl.env("XCURSOR_THEME", "breeze_cursors")
 hl.env("HYPRCURSOR_SIZE", "48")
