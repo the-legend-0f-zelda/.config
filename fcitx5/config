@@ -12,7 +12,7 @@ ModifierOnlyKeyTimeout=250
 
 [Hotkey/TriggerKeys]
 0=Hangul
-1=Alt+space
+1=Control+space
 
 [Hotkey/ActivateKeys]
 0=Hangul_Hanja
