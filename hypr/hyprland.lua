@@ -204,6 +204,16 @@ hl.device({
     sensitivity = 0.8,
 })
 
+hl.device({
+    name    = "syna802e:00-06cb:cfa8-touchpad",
+    enabled = false,
+})
+
+hl.device({
+    name    = "syna802e:00-06cb:cfa8-mouse",
+    enabled = false,
+})
+
 
 ---------------------
 ---- KEYBINDINGS ----
