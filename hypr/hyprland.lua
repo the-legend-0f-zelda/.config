@@ -27,6 +27,8 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("waypaper --restore")
     --hl.exec_cmd("chillpill-shell")
     hl.exec_cmd("systemctl --user start bincur")
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
+    hl.exec_cmd("xsettingsd")
     hl.exec_cmd("~/.config/hypr/clamshell.sh init")
     hl.exec_cmd("waybar")
 end)
@@ -36,11 +38,11 @@ end)
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
 
-hl.env("QT_QPA_PLATFORMTHEME", "kde")
+hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
 hl.env("XCURSOR_SIZE", "48")
-hl.env("XCURSOR_THEME", "breeze_cursors")
+hl.env("XCURSOR_THEME", "Adwaita")
 hl.env("HYPRCURSOR_SIZE", "48")
-hl.env("HYPRCURSOR_THEME", "breeze-hypr")
+hl.env("HYPRCURSOR_THEME", "rose-pine-hyprcursor")
 -- GTK_IM_MODULE 미설정: Wayland 네이티브 GTK 앱(Firefox 등)은 text-input-v3로 fcitx5에 붙음. fcitx 지정 시 dbus 경로와 충돌해 한글 입력 깨짐
 -- hl.env("GTK_IM_MODULE", "fcitx")
 --hl.env("QT_IM_MODULE", "fcitx")
